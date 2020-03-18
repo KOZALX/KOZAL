@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-cd $HOME/TRNDX
+cd $HOME/KOZALX
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x TRNDX
+chmod +x KOZALX
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr TRND.lua
+rm -fr KOZAL.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/KOZALX/KOZAL/master/TRND.lua"
+wget "https://raw.githubusercontent.com/KOZALX/KOZAL/master/KOZAL.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd TRNDX
+cd KOZALX
 rm -rf luarocks*
 lua start.lua
 
