@@ -4786,10 +4786,10 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,get_id)
 else
-sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'🖼 ┇ '..Description..'\n🔘 ┇ ايديك -  '..Id..'\n📌 ┇ معرفـك -'..UserName_User..'\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك - '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'⌔︙ '..Description..'\n⌔︙ ايديك -  '..Id..'\n⌔︙ معرفـك -'..UserName_User..'\n⌔︙ رتـبــتك -'..Status_Gps..'\n⌔︙ رسائلك - '..NumMsg..'\n⌔︙ تعديلاتك - '..message_edit..' \n⌔︙ تفاعلـك - '..TotalMsg..'\n⌔︙ مجوهراتك -'..Num_Games)
 end
 else
-send(msg.chat_id_, msg.id_,'🖼 ┇ ليس لديك صوره 🙁 ؟'..'\n*🔘 ┇ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك - '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games..'*') 
+send(msg.chat_id_, msg.id_,'⌔︙ ليس لديك صوره 🙁 ؟'..'\n*⌔︙ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n⌔︙رتـبــتك -'..Status_Gps..'\n⌔︙ رسائلك - '..NumMsg..'\n⌔︙ تعديلاتك - '..message_edit..' \n⌔︙ تفاعلـك - '..TotalMsg..'\n⌔︙ مجوهراتك -'..Num_Games..'*') 
 end
 else
 if get_id then
@@ -4805,7 +4805,7 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..get_id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n*🔘 ┇ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك -  '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games..'*')
+send(msg.chat_id_, msg.id_,'\n*⌔︙ ايديك - '..Id..'\n⌔︙ معرفـك -* ['..UserName_User..']*\n⌔︙ رتـبــتك -'..Status_Gps..'\n⌔︙ رسائلك - '..NumMsg..'\n⌔︙ تعديلاتك -  '..message_edit..' \n⌔︙ تفاعلـك - '..TotalMsg..'\n⌔︙ مجوهراتك -'..Num_Games..'*')
 end
 end
 end,nil)   
@@ -4869,7 +4869,7 @@ local Status_Gps = Get_Rank(Id,msg.chat_id_)
 local message_edit = database:get(bot_id..'KOZAL:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
 local Add_Mem = database:get(bot_id.."KOZAL:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
-send(msg.chat_id_, msg.id_,'*🔘 ┇ ايديه - '..Id..'\n📨 ┇ رسائله - '..NumMsg..'\n📌 ┇ معرفه - *['..UserName_User..']*\n📈 ┇ تفاعله - '..TotalMsg..'\n🚸 ┇ رتبته - '..Status_Gps..'\n⚡ ┇ تعديلاته - '..message_edit..'\n💠 ┇ جهاته - '..Add_Mem..'*') 
+send(msg.chat_id_, msg.id_,'*⌔︙ ايديه - '..Id..'\n⌔︙ رسائله - '..NumMsg..'\n⌔︙ معرفه - *['..UserName_User..']*\n⌔︙ تفاعله - '..TotalMsg..'\n⌔︙ رتبته - '..Status_Gps..'\n⌔︙ تعديلاته - '..message_edit..'\n⌔︙ جهاته - '..Add_Mem..'*') 
 end,nil)   
 else
 send(msg.chat_id_, msg.id_,'👤 ┇ لا يوجد حساب بهاذا المعرف')
@@ -5229,7 +5229,7 @@ name = string.gsub(name,"شهر","امشي__ولا تعبر نهر")
 name = string.gsub(name,"شكه","يامن تعب يامن__يا من على الحاضر لكة")
 name = string.gsub(name,"القرد","__بعين امه غزال")
 name = string.gsub(name,"يكحله","اجه___عماها")
-send(msg.chat_id_, msg.id_,"🔰 ┇ اسرع واحد يكمل المثل ~ {"..name.."}")
+send(msg.chat_id_, msg.id_,"?? ┇ اسرع واحد يكمل المثل ~ {"..name.."}")
 return false
 end
 end
@@ -5740,7 +5740,7 @@ send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-🔰 اهلا بك في سورس كوزال  🔰
+🔰 اهلا بك في سورس كوزل  🔰
 
 🌐┇ [KoZal TEAM](https://t.me/KOZALTEAM)
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
